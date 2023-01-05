@@ -11,8 +11,8 @@
 
 html,body,#vboxPane {
    	  background: #dedbde;
-      border: 0; solid transparent;
-   	  margin: 0;;
+      border: 0 solid transparent;
+   	  margin: 0;
    	  padding: 0;
    	  color: #000;
 }
@@ -368,7 +368,7 @@ div.vboxVMMDialog div.ui-dialog-buttonpane {
 .vboxVMMSpacer { width: 12px; height: 1px; margin: 0; padding: 0; }
 #vboxVirtualMediaManager table.vboxVMMList { font-size: 0.9em; }
 #vboxVirtualMediaManager tr { vertical-align: middle; }
-#vboxVirtualMediaManager table td input.vboxVMMMediaExpand { background-position:left center;height:16px;width:10px;margin: 0; 2px 0px 0px;padding: 0; border: 0; }
+#vboxVirtualMediaManager table td input.vboxVMMMediaExpand { background-position:left center;height:16px;width:10px;margin: 0 2px 0 0;padding: 0; border: 0; }
 #vboxVirtualMediaManager .vboxListTable td,
 	#vboxVirtualMediaManager .vboxListTable th { white-space: nowrap; padding: 2px; }
 #vboxVirtualMediaManager table.vboxVMMList tr > th, #vboxVirtualMediaManager table.vboxVMMList tr > td { padding-left: 12px; }
@@ -428,7 +428,7 @@ div.vboxWizard {border: 1px solid #aaaaaa; border-bottom: 0px solid transparent;
 #vboxImportProps td.vboxHideOverflow div
 { text-wrap: unrestricted !important; word-wrap: break-word !important; overflow: hidden !important; white-space: wrap !important;}
 
-div.vboxWizard table td.vboxApplianceHeader { border-style: solid; border-color: #666; border-width: 1px 0px 1px 0px; background: #f0f0f8; padding: 2px; white-space: nowrap; text-align: left; font-weight: bold; }
+div.vboxWizard table td.vboxApplianceHeader { border-style: solid; border-color: #666; border-width: 1px 0 1px 0; background: #f0f0f8; padding: 2px; white-space: nowrap; text-align: left; font-weight: bold; }
 
 /* Import / export appliance wizards' lists */
 #vboxImportPropsContainer, #vboxExportAppVMListContainer, #vboxExportPropsContainer {
@@ -458,7 +458,7 @@ div.vboxWizard table td.vboxApplianceHeader { border-style: solid; border-color:
 	border: 1px solid transparent;
 	list-style: none;
 	text-align: right;
-	margin: 0px 4px 0px 0px;
+	margin: 0 4px 0 0;
 	display: inline-block;
 	padding: 3px 12px 3px 8px;
 } 
