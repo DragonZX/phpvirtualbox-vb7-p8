@@ -145,7 +145,7 @@
 				
 				$('#vboxResizeOverlay').remove();
 				$('body').disableSelection().css({'cursor':(jQuery.browser.opera ? 'e-resize' : 'col-resize')});
-				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border:0px;margin:0px;padding:0px;position:absolute;top:0px;left:0px;z-index:10;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
+				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border: 0;;margin: 0;;padding: 0;;position:absolute;top: 0;;left: 0;;z-index:10;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
 				$('#vboxResizeBar').data('vboxX',e.pageX);
 				
 			},'stop':function(e){
@@ -182,7 +182,7 @@
 				
 				$('#vboxResizeOverlay').remove();
 				$('body').disableSelection().css({'cursor':(jQuery.browser.opera ? 'n-resize' : 'row-resize')});
-				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border:0px;margin:0px;padding:0px;position:absolute;top:0px;left:0px;z-index:10;cursor:'+(jQuery.browser.opera ? 'n-resize' : 'row-resize')}));
+				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border: 0;;margin: 0;;padding: 0;;position:absolute;top: 0;;left: 0;;z-index:10;cursor:'+(jQuery.browser.opera ? 'n-resize' : 'row-resize')}));
 				$('#vboxResizeBarProgress').data('vboxY',e.pageY);
 				
 			},'stop':function(e){
@@ -236,7 +236,7 @@
 				
 				$('#vboxResizeOverlay').remove();
 				$('body').disableSelection().css({'cursor':(jQuery.browser.opera ? 'e-resize' : 'col-resize')});
-				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border:0px;margin:0px;padding:0px;position:absolute;top:0px;left:0px;z-index:10;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
+				$('#vboxPane').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:100%;height:100%;border: 0;;margin: 0;;padding: 0;;position:absolute;top: 0;;left: 0;;z-index:10;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
 				$('#vboxResizeBarProgressEW').data('vboxX',e.pageX);
 				
 			},'stop':function(e){
@@ -430,10 +430,10 @@
 
 </head>
 <body>
-<div id='vboxPane' style='height: 100%; margin: 0px; padding: 0px;'>
-<table id='vboxTableMain' cellpadding=0 cellspacing=0 style="height: 100%; width: 100%; padding: 0px; margin: 0px; border: 0px; border-spacing: 0px;">
+<div id='vboxPane' style='height: 100%; margin: 0; padding: 0;'>
+<table id='vboxTableMain' cellpadding=0 cellspacing=0 style="height: 100%; width: 100%; padding: 0; margin: 0; border: 0; border-spacing: 0;">
 	<tr style='vertical-align: middle;'>
-		<td style='height:20px;border:0px;padding:0px;margin:0px;border-spacing:0px;'>
+		<td style='height:20px;border: 0;;padding: 0;;margin: 0;;border-spacing: 0;;'>
 			<div id='vboxMenu'>
 				<!--
 				
@@ -460,22 +460,22 @@
 		</td>
 	</tr>
 	<tr style='vertical-align: top;'>
-		<td style='border:0px;padding:0px;margin:0px;border-spacing:0px;' id='vboxResize'>
-			<table style='width:100%;border:0px;padding:0px;border-spacing:0px;'>
+		<td style='border: 0;;padding: 0;;margin: 0;;border-spacing: 0;;' id='vboxResize'>
+			<table style='width:100%;border: 0;;padding: 0;;border-spacing: 0;;'>
 				<tr id='vboxChooserResizePane' style='vertical-align: top;'>
-					<td id="vboxChooserPane" style='padding:0px;border-spacing:0px;margin:0px;'>
+					<td id="vboxChooserPane" style='padding: 0;;border-spacing: 0;;margin: 0;;'>
 						<!--
 						
 						VM List
 							
 						-->
 					</td>
-					<td id='vboxResizeTD' style='border: 0px; margin: 0px; padding: 0px; text-align: center;'>
-						<div style='margin:0px;padding:0px;width:4px;height:100%;'>
-							<div style='position: absolute; margin: 0px; padding:2px; width: 0px; height: 100%;' id='vboxResizeBar' ></div>
+					<td id='vboxResizeTD' style='border: 0; margin: 0; padding: 0; text-align: center;'>
+						<div style='margin: 0;;padding: 0;;width:4px;height:100%;'>
+							<div style='position: absolute; margin: 0; padding:2px; width: 0; height: 100%;' id='vboxResizeBar' ></div>
 						</div>
 					</td>
-					<td id="vboxPaneTabContent" style='width:100%;border:0px;padding:0px;border-spacing:0px;margin:0px'>
+					<td id="vboxPaneTabContent" style='width:100%;border: 0;;padding: 0;;border-spacing: 0;;margin: 0;'>
 						<!--
 						
 							Tab content
@@ -489,18 +489,18 @@
 	<!--
 		Progress operation list resize bar
 	-->
-	<tr style='padding: 0px; margin: 0px; vertical-align: middle;'>
-		<td id='vboxResizeTDProgress' style='border: 0px; margin: 0px; padding: 0px; text-align: center; height: 5px; vertical-align: middle'>
+	<tr style='padding: 0; margin: 0; vertical-align: middle;'>
+		<td id='vboxResizeTDProgress' style='border: 0; margin: 0; padding: 0; text-align: center; height: 5px; vertical-align: middle'>
 			<div style='width:99%; margin:0 auto; padding:2px;' id='vboxResizeBarProgress' ></div>
 		</td>
 	</tr>
-	<tr style='vertical-align: top; padding: 0px;'>
-		<td style='border:0px;padding:0px;margin:0px;border-spacing:0px;height:1%'>
+	<tr style='vertical-align: top; padding: 0;'>
+		<td style='border: 0;;padding: 0;;margin: 0;;border-spacing: 0;;height:1%'>
 				<div id='vboxProgressOps' style='height:80px;overflow:auto;position:relative'>
 					<!--
 						Resize bar for E/ W 
 					 -->
-					<div style="position:absolute;z-index:1;margin:0px;border:0px;padding:1px;width: 0px;background:#aaa;display:none;" id='vboxResizeBarProgressEW' ></div>
+					<div style="position:absolute;z-index:1;margin: 0;;border: 0;;padding:1px;width: 0;background:#aaa;display:none;" id='vboxResizeBarProgressEW' ></div>
 					<!--
 					
 						Progress operation list

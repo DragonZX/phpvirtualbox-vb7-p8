@@ -1248,7 +1248,7 @@ function vboxSettingsAddController(con,list) {
    		};
 
    		var tb = new vboxToolbarSmall({buttons: [b],
-       		  buttonStyle: 'margin:0px;padding:0px;border:0px;background-repeat:no-repeat;background-position:0px 0px;',
+       		  buttonStyle: 'margin: 0;;padding: 0;;border: 0;;background-repeat:no-repeat;background-position: 0; 0px;',
        		  noHover: true,
        		  renderTo: li.find('td.vboxControllerAttachmentButton')});
    		tb.disable();
@@ -1604,7 +1604,7 @@ $('#vboxSettingsStorageTableWrapper').one('show',function(){
 
 		$('#vboxResizeOverlay').remove();
 		$('body').disableSelection().css({'cursor':(jQuery.browser.opera ? 'e-resize' : 'col-resize')});
-		$('#vboxSettingsDialog').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:99%;height:99%;border:0px;margin:0px;padding:0px;position:absolute;top:0px;left:0px;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
+		$('#vboxSettingsDialog').append($('<div />').attr({'id':'vboxResizeOverlay','style':'width:99%;height:99%;border: 0;;margin: 0;;padding: 0;;position:absolute;top: 0;;left: 0;;cursor:'+(jQuery.browser.opera ? 'e-resize' : 'col-resize')}));
 		
 		
 	},'drag':function(e){

@@ -41,7 +41,7 @@ var vboxHostDetailsSections = {
 			   }
 		   },{
 			   title: '',
-			   data: '<span id="vboxHostMemUsed"><div style="background-color:#a33" id="vboxHostMemUsedPct"><div style="background-color:#a93;float:right;" id="vboxHostMemResPct"></div></div><div style="width:100%;position:relative;top:-14px;left:0px;text-align:center;"><span id="vboxHostMemUsedLblPct" style="float:left" /><span id="vboxHostMemFreeLbl" style="float:right" /></div></span>'
+			   data: '<span id="vboxHostMemUsed"><div style="background-color:#a33" id="vboxHostMemUsedPct"><div style="background-color:#a93;float:right;" id="vboxHostMemResPct"></div></div><div style="width:100%;position:relative;top:-14px;left: 0;;text-align:center;"><span id="vboxHostMemUsedLblPct" style="float:left" /><span id="vboxHostMemFreeLbl" style="float:right" /></div></span>'
 		   },{
 			   title: "Processor(s)",
 			   callback: function(d) {
@@ -764,9 +764,9 @@ var vboxVMDetailsSections = {
 				height = vboxVMDetailsSections.preview._resolutionCache[d.id].height;
 			}
 
-			var divOut1 = "<div class='vboxDetailsPreviewVMName' style='position:absolute;overflow:hidden;padding:0px;height:"+height+"px;width:"+width+"px;"+
+			var divOut1 = "<div class='vboxDetailsPreviewVMName' style='position:absolute;overflow:hidden;padding: 0;;height:"+height+"px;width:"+width+"px;"+
 				"display:"+((vboxVMStates.isRunning(d) || vboxVMStates.isSaved(d)) ? 'none': '')+"' >" +
-				"<div style='position:relative;display:table-cell;padding:0px;vertical-align:middle;color:#fff;font-weight:bold;overflow:hidden;text-align:center;height:"+height+"px;width:"+width+"px;" +
+				"<div style='position:relative;display:table-cell;padding: 0;;vertical-align:middle;color:#fff;font-weight:bold;overflow:hidden;text-align:center;height:"+height+"px;width:"+width+"px;" +
 				($.browser.msie ? "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=\"true\", src=\"images/monitor_glossy.png\", sizingMethod=\"scale\")": "" +
 					"background:url(images/monitor_glossy.png) top left no-repeat;-moz-background-size:100% 100%;background-size:"+(width+1) +"px " + (height+1)+"px;-webkit-background-size:100% 100%") +
 				"'><span class='textFill' style='font-size: 12px;position:relative;display:inline-block;'>"+$('<div />').html(d.name).text()+"</span></div>"+
@@ -777,18 +777,18 @@ var vboxVMDetailsSections = {
 			        	data: "<tr style='vertical-align: middle'>"+
 							"<td style='text-align: center' colspan='2'>"+
 								"<table class='vboxInvisible vboxPreviewTable' style='margin-left:auto;margin-right:auto;'>"+
-									"<tr style='vertical-align:bottom; padding:0px; margin:0px;height:17px'>"+
+									"<tr style='vertical-align:bottom; padding: 0;; margin: 0;;height:17px'>"+
 										"<td class='vboxInvisible' style='text-align:right;width:15px;height:17px'><img src='images/monitor_tl.png' style='width:15px;height:17px;'/></td>"+
 										"<td class='vboxInvisible'><img src='images/monitor_top.png' class='vboxPreviewMonitor' style='height:17px;width:"+width+"px'/></td>"+
 										"<td class='vboxInvisible' style='text-align:left;width:15px;height:17px'><img src='images/monitor_tr.png' style='width:15px;height:17px;'/></td>"+
 									"</tr>"+
 									"<tr style='vertical-align:top;'>"+
 										"<td class='vboxInvisible' style='text-align:right;'><img src='images/monitor_left.png' style='width:15px;height:"+height+"px' class='vboxPreviewMonitorSide' /></td>"+
-										"<td class='vboxInvisible' style='position:relative;'><div class='vboxDetailsPreviewWrap "+ (vboxVMStates.isSaved(d) ? 'vboxPreviewSaved': '') +"' style='width: "+width+"px; height:"+height+"px; position:relative;overflow:hidden;text-align:center;background-color:#000;border:0px;display:table;#position:relative;background-repeat:no-repeat;padding:0px;margin:0px;'>"+
+										"<td class='vboxInvisible' style='position:relative;'><div class='vboxDetailsPreviewWrap "+ (vboxVMStates.isSaved(d) ? 'vboxPreviewSaved': '') +"' style='width: "+width+"px; height:"+height+"px; position:relative;overflow:hidden;text-align:center;background-color:#000;border: 0;;display:table;#position:relative;background-repeat:no-repeat;padding: 0;;margin: 0;;'>"+
 											"<img class='vboxDetailsPreviewImg' src='images/monitor_glossy.png' vspace='0px' hspace='0px' "+
-											"style='display:"+((vboxVMStates.isRunning(d) || vboxVMStates.isSaved(d)) ? '': 'none')+";top:0px;margin:0px;border:0px;padding;0px;"+
+											"style='display:"+((vboxVMStates.isRunning(d) || vboxVMStates.isSaved(d)) ? '': 'none')+";top: 0;;margin: 0;;border: 0;;padding;0px;"+
 											"background-position:top left;background-repeat:no-repeat;"+
-											"-moz-background-size:100% 100%;background-size:100% 100%;-webkit-background-size:100% 100%;background-spacing:0px 0px;"+
+											"-moz-background-size:100% 100%;background-size:100% 100%;-webkit-background-size:100% 100%;background-spacing: 0; 0px;"+
 											"height:"+height+"px;width:"+width+"px;' />"+
 											divOut1+
 										"</div></td>"+
@@ -928,11 +928,11 @@ var vboxVMDetailsSections = {
 					   // RDP
 					   } else if(d['VRDEServer']['VRDEExtPack'].indexOf("VNC") == -1) {
 						   rowStr = " <a href='" + vboxEndpointConfig.rdpGen + "?host=" + chost + '&port=' + d['VRDEServerInfo']['port'] + "&id=" + d['id'] + "&vm=" + encodeURIComponent(d['name']) + "'>" + d['VRDEServerInfo']['port'] + "</a>";
-						   rowStr += ' <img src="images/vbox/blank.gif" style="vspace:0px;hspace:0px;height2px;width:10px;" /> (' + chost + ':' + d['VRDEServerInfo']['port'] + ')';
+						   rowStr += ' <img src="images/vbox/blank.gif" style="vspace: 0;;hspace: 0;;height2px;width:10px;" /> (' + chost + ':' + d['VRDEServerInfo']['port'] + ')';
 					   // VNC   
 					   } else {
 						   rowStr = " <a href='vnc://" + chost + ':' + d['VRDEServerInfo']['port'] + "'>" + d['VRDEServerInfo']['port'] + "</a>";						   
-						   rowStr += ' <img src="images/vbox/blank.gif" style="vspace:0px;hspace:0px;height2px;width:10px;" /> (' + chost + ':' + d['VRDEServerInfo']['port'] + ')';
+						   rowStr += ' <img src="images/vbox/blank.gif" style="vspace: 0;;hspace: 0;;height2px;width:10px;" /> (' + chost + ':' + d['VRDEServerInfo']['port'] + ')';
 					   }
 				   } else {
 					   rowStr += ' ('+chost+')';
@@ -2815,7 +2815,7 @@ function vboxWizard() {
 		
 		this.dialog = $('<div />').attr({'id':this.name+'Dialog','style':'display: none','class':'vboxWizard'});
 		
-		this.form = $('<form />').attr({'name':('frm'+this.name),'style':'height:100%;margin:0px;padding:0px;border:0px;'})
+		this.form = $('<form />').attr({'name':('frm'+this.name),'style':'height:100%;margin: 0;;padding: 0;;border: 0;;'})
 			.on('submit',function(e){
 				self.displayNext();
 				e.stopPropagation();
@@ -2824,7 +2824,7 @@ function vboxWizard() {
 			});
 
 		// main table
-		var tbl = $('<table />').attr({'class':'vboxWizard','style':'height: 100%; margin:0px; padding:0px;border:0px;'});
+		var tbl = $('<table />').attr({'class':'vboxWizard','style':'height: 100%; margin: 0;; padding: 0;;border: 0;;'});
 		var tr = $('<tr />');
 
 		
@@ -3686,7 +3686,7 @@ function vboxButtonMediaMenu(type,callback,mediumPath) {
 	 */
 	this.enableButton = function() {
 		var b = self.button;
-		this._buttonElement.css('background-image','url(images/vbox/' + b.icon + '_'+self.size+'px.png)').removeClass('vboxDisabled').html('<img src="images/downArrow.png" style="margin:0px;padding:0px;float:right;width:6px;height:6px;" />');
+		this._buttonElement.css('background-image','url(images/vbox/' + b.icon + '_'+self.size+'px.png)').removeClass('vboxDisabled').html('<img src="images/downArrow.png" style="margin: 0;;padding: 0;;float:right;width:6px;height:6px;" />');
 	};
 	/**
 	 * Disable this button
@@ -3755,7 +3755,7 @@ function vboxButtonMediaMenu(type,callback,mediumPath) {
 			$(document).one('mouseup',function(){
 				$(tbtn).removeClass('vboxButtonMenuButtonDown');
 			});
-		}).html('<img src="images/downArrow.png" style="margin:0px;padding:0px;float:right;width:6px;height:6px;" />').hover(
+		}).html('<img src="images/downArrow.png" style="margin: 0;;padding: 0;;float:right;width:6px;height:6px;" />').hover(
 					function(){if(!$(this).hasClass('vboxDisabled')){$(this).addClass('vboxToolbarSmallButtonHover');}},
 					function(){$(this).removeClass('vboxToolbarSmallButtonHover');}		
 		);
@@ -3790,7 +3790,7 @@ function vboxButtonMediaMenu(type,callback,mediumPath) {
 		
 		this._buttonElement = self.buttonElement(); 
 		
-		var tbl = $('<table />').attr({'style':'border:0px;margin:0px;padding:0px;'+self.buttonStyle});
+		var tbl = $('<table />').attr({'style':'border: 0;;margin: 0;;padding: 0;;'+self.buttonStyle});
 		$('<tr />').css({'vertical-align':'bottom'}).append(this._buttonElement).appendTo(tbl);
 		
 		$(targetElm).attr({'name':self.name}).addClass('vboxToolbarSmall vboxButtonMenu vboxEnablerTrigger').on('disable',self.disable).on('enable',self.enable).append(tbl);

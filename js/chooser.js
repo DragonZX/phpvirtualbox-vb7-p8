@@ -430,7 +430,7 @@ var vboxChooser = {
 			// State text goes away
 			styleRules[styleRules.length] = 'div.vboxChooserGroup > div.vboxChooserGroupVMs table.vboxChooserVM span.vboxVMState { display: none; }';
 			// Less padding
-			styleRules[styleRules.length] = 'div.vboxChooserGroup > div.vboxChooserGroupVMs table.vboxChooserVM td { padding: 0px; }';
+			styleRules[styleRules.length] = 'div.vboxChooserGroup > div.vboxChooserGroupVMs table.vboxChooserVM td { padding: 0; }';
 			// Some group header items and drop targets go away
 			styleRules[styleRules.length] = 'div.vboxChooserGroup > div.vboxChooserGroupHeader > .vboxChooserGroupNameArrowCollapse, #' +vboxChooser._anchorid + ' div.vboxChooserGroup .vboxChooserDropTarget { display: none; }';
 			styleRules[styleRules.length] = 'div.vboxChooserGroup { overflow: hidden; }';

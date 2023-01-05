@@ -11,9 +11,9 @@
 
 html,body,#vboxPane {
    	  background: #dedbde;
-      border:0px solid transparent;
-   	  margin:0px;
-   	  padding: 0px;
+      border: 0; solid transparent;
+   	  margin: 0;;
+   	  padding: 0;
    	  color: #000;
 }
 #vboxPane { padding-left: 4px;  padding-right: 4px;}
@@ -27,8 +27,8 @@ html,body,input,select,.ui-widget, .ui-tabs, .ui-widget-content,textarea {
 */
 html,body,#vboxPane,#vboxTableMain {
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 body { overflow-y: hidden; } /* avoid scroll bars */
 /* left-margins */
@@ -37,12 +37,12 @@ div.vboxMenuBar { padding-left: 4px; }
 
 /* Common */
 #vboxPane table, div.vboxDialogContent table { width: 100%; }
-#vboxPane img, div.vboxDialogContent img { vertical-align: middle; border: 0px; }
+#vboxPane img, div.vboxDialogContent img { vertical-align: middle; border: 0; }
 #vboxPane textarea, div.vboxDialogContent textarea { width: 100%; }
 #vboxPane input, div.vboxDialogContent input { vertical-align: middle; }
 #vboxPane input.vboxCheckbox, div.vboxDialogContent input.vboxCheckbox,
 	#vboxPane input.vboxRadio, div.vboxDialogContent input.vboxRadio { vertical-align: middle; }
-input.vboxRadio, input.vboxCheckbox { padding: 0px; margin: 1px 1px 3px 2px; display: inline }
+input.vboxRadio, input.vboxCheckbox { padding: 0; margin: 1px 1px 3px 2px; display: inline }
 #vboxPane th, div.vboxDialogContent th { white-space: nowrap; }
 #vboxPane .vboxDisabled, div.vboxDialogContent .vboxDisabled { color: #999; cursor: default; }
 #vboxPane img.vboxDisabled, div.vboxDialogContent img.vboxDisabled {
@@ -52,12 +52,12 @@ input.vboxRadio, input.vboxCheckbox { padding: 0px; margin: 1px 1px 3px 2px; dis
 }	
 #vboxPane a, div.vboxDialogContent a,
 	#vboxPane a:visited, div.vboxDialogContent a:visited { text-decoration: none; }
-#vboxPane hr, div.vboxDialogContent hr { padding: 1px; margin: 0px; border: 0px; }
+#vboxPane hr, div.vboxDialogContent hr { padding: 1px; margin: 0; border: 0; }
 #vboxPane .vboxSeparatorLine, div.vboxDialogContent .vboxSeparatorLine { background: #aaa; }
 
 /* jQuery UI Components */
 .ui-widget-content div.vboxDialogContent, div.ui-dialog div.ui-dialog-content, div.ui-dialog div.ui-dialog-buttonpane { background: #fff; } 
-div.ui-dialog div.ui-dialog-buttonpane { padding: 4px; margin: 0px; text-align: center; border-width: 0px; }
+div.ui-dialog div.ui-dialog-buttonpane { padding: 4px; margin: 0; text-align: center; border-width: 0; }
 div.ui-dialog div.ui-dialog-buttonpane .ui-dialog-buttonset { float: none; }
 div.ui-dialog div.ui-dialog-titlebar { color: #fff; background: #369; }
 div.ui-dialog div.ui-dialog-titlebar img { height: 16px; width: 16px; }
@@ -87,18 +87,18 @@ div.ui-dialog div.ui-dialog-buttonpane .ui-state-hover {
 }
 div.ui-dialog .ui-button .ui-button-text { display: block; line-height: 1;  }
 div.ui-dialog .ui-button-text-only .ui-button-text { padding: 4px; }
-div.ui-dialog .ui-button-text-icon .ui-button-text, .ui-button-text-icons .ui-button-text { padding: 0px; }
+div.ui-dialog .ui-button-text-icon .ui-button-text, .ui-button-text-icons .ui-button-text { padding: 0; }
 div.ui-dialog div.vboxDialogContent th { width: auto; white-space: nowrap; text-align: right;}
 div.ui-dialog div.vboxDialogContent td { width: 100%; white-space: nowrap; text-align: left; }
 div.ui-progressbar div.ui-progressbar-value { background: #00CD00 }
-div.ui-widget-overlay { padding: 0px; margin: 0px; border: 0px; width: 100%; height: 100%; position:fixed ;top:0px;left:0px;}
+div.ui-widget-overlay { padding: 0; margin: 0; border: 0; width: 100%; height: 100%; position:fixed ;top: 0;;left: 0;;}
 div.ui-dialog .vboxDialogTitleIcon { height: 16px; width: 16px; }
 
 /* Tabs */
-div.ui-tabs { border: 0px; }
-div.ui-tabs ul.ui-tabs-nav { margin: 0px; padding: 0px; border: 0px; background: #aaa; }
-div.ui-tabs ul.ui-tabs-nav li { border: 0px; margin-left: 2px; }
-div.ui-tabs ul.ui-tabs-nav li:first-child { margin-left: 0px; }
+div.ui-tabs { border: 0; }
+div.ui-tabs ul.ui-tabs-nav { margin: 0; padding: 0; border: 0; background: #aaa; }
+div.ui-tabs ul.ui-tabs-nav li { border: 0; margin-left: 2px; }
+div.ui-tabs ul.ui-tabs-nav li:first-child { margin-left: 0; }
 div.ui-tabs ul.ui-tabs-nav a img { margin-right:4px; }
 /* tabs within tabs */
 div.ui-tabs .ui-tabs-panel div.ui-tabs { background: #aaa; }
@@ -106,16 +106,16 @@ div.ui-tabs .ui-tabs-panel div.ui-tabs { background: #aaa; }
 /* sliders and slider Scales */
 div.slider { margin-left: 8px; margin-right: 8px; background: #aaa; }
 div.slider .ui-state-default { background: #ff8; border: 1px solid #000; }
-input.sliderValue { margin: 0px; padding: 2px; text-align: right; }
-div.sliderScale {  margin: 0px; padding-top: 10px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px; }
-div.sliderScale table { width: 100%; margin: 0px; padding: 0px; border: 0px; border-spacing: 0px; }
-div.sliderScale tr { padding: 0px; margin: 0px; }
+input.sliderValue { margin: 0; padding: 2px; text-align: right; }
+div.sliderScale {  margin: 0; padding-top: 10px; padding-left: 0; padding-right: 0; padding-bottom: 0; }
+div.sliderScale table { width: 100%; margin: 0; padding: 0; border: 0; border-spacing: 0; }
+div.sliderScale tr { padding: 0; margin: 0; }
 div.sliderScale td { height: 8px; border-right: 1px solid #000; }
 div.sliderScale td:first-child { height: 8px; border-left: 1px solid #000; }
 
 input.vboxImgButton { 
 	border:none;
-	padding:0px;
+	padding: 0;;
 	vertical-align:middle;
 	margin: 0px 2px 2px 2px;
 	height:20px;
@@ -136,7 +136,7 @@ div.vboxDialogContent span.vboxTableLabel, #vboxPane span.vboxTableLabel {
 }
 
 /* Lists and ListItems */
-.vboxList ul, ul.vboxList { list-style: none; margin: 0px; padding: 0px ; background: #fff; }
+.vboxList ul, ul.vboxList { list-style: none; margin: 0; padding: 0px ; background: #fff; }
 .vboxList li { padding: 2px; }
 .vboxList li input { vertical-align: middle; }
 ul.vboxList li, ul.vboxList li table { line-height: 18px; }
@@ -170,7 +170,7 @@ ul.vboxHover li {
 }
 
 ul.vboxHoverBorderless li {
-	border-width: 0px;
+	border-width: 0;
 }
 ul.vboxHover li.vboxHover, ul.vboxHover li table.vboxHover {
 	color: #000 ! important;
@@ -211,14 +211,14 @@ tbody.vboxHover tr.vboxHover td {
 	color: #000;
 }
 /* Tables */
-table.vboxVertical, table.vboxHorizontal { border: 0px; border-spacing: 0px; width: 100%; }
+table.vboxVertical, table.vboxHorizontal { border: 0; border-spacing: 0; width: 100%; }
 table.vboxHorizontal th, table.vboxHorizontal td { white-space: nowrap; }
 table.vboxVertical tr { vertical-align: middle; }
 table.vboxVertical th { white-space: nowrap; text-align: right; font-weight: bold; width: auto; padding: 4px; }
 table.vboxVertical td { text-align: left; width: 100%; white-space: nowrap; padding: 4px; }
 table.vboxHorizontal th { border-bottom: 1px solid #666; background: #ccc; padding: 2px; white-space: nowrap; text-align: left; font-weight: bold; }
 table.vboxVertical input.vboxText, table.vboxVertical select { width: 100%; }
-table.vboxInvisible, table.vboxInvisible td { padding: 0px; margin: 0px; border: 0px; border-spacing: 0px; }
+table.vboxInvisible, table.vboxInvisible td { padding: 0; margin: 0; border: 0; border-spacing: 0; }
 .vboxOddRow { background-color: #efefef; }
 
 
@@ -271,7 +271,7 @@ input.vboxToolbarSmallButtonHover, .vboxButtonMenu td.vboxToolbarSmallButtonHove
 	cursor: pointer;
 }
 table.vboxToolbar tr { vertical-align: bottom; }
-table.vboxToolbar .vboxToolbarSeparator { background: #aaa; margin: 0px; padding: 0px; border: 0px; width: 1px; }
+table.vboxToolbar .vboxToolbarSeparator { background: #aaa; margin: 0; padding: 0; border: 0; width: 1px; }
 
 /* Menu buttons */
 td.vboxButtonMenuButton { background-repeat: no-repeat; background-position: 2px 3px; }
@@ -298,19 +298,19 @@ div.vboxLoaderDialog div.ui-dialog-buttonpane, div.vboxLoaderDialog div.ui-dialo
 /* VM Logs and Ajax error text boxes*/
 #vboxVMLogContainer .ui-tabs {
 	background: #aaa;
-	border: 0px;
+	border: 0;
 	-moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/;	
 }
 
 #vboxVMLog { background: #aaa; }
-div.vboxVMLog form, div.vboxAlert form { height: 100%; margin: 0px; padding: 0px; border: 0px; display: block; }
+div.vboxVMLog form, div.vboxAlert form { height: 100%; margin: 0; padding: 0; border: 0; display: block; }
 div.vboxVMLog form textarea, div.vboxAlert form textarea {
 	font-family: courier, monospace;
 	font-size: 12px;
 	background: #fff;
 	color: #000;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	display: block;
 }
 
@@ -333,8 +333,8 @@ span.vboxArrowImage {
 	height: 18px;
 	width: 18px;
 	background-repeat: no-repeat;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 /* Snapshots */
 #vboxSnapshotList, #vboxSnapshotList table { height: 100%; }
@@ -348,7 +348,7 @@ span.vboxArrowImage {
 #vboxSnapshotDetails td.vboxSnapshotDetailsMachine { height: 300px; }
 	
 /* Virtual Media Manager */
-#vboxVMMDialog { background: #e9e9e9; padding: 0px; margin: 0px; }
+#vboxVMMDialog { background: #e9e9e9; padding: 0; margin: 0; }
 div.vboxVMMDialog div.ui-dialog-buttonpane {
 	background: #e9e9e9;
 }
@@ -365,10 +365,10 @@ div.vboxVMMDialog div.ui-dialog-buttonpane {
 }
 
 #vboxVirtualMediaManager .ui-tabs-panel { background: #fff; }
-.vboxVMMSpacer { width: 12px; height: 1px; margin: 0px; padding: 0px; }
+.vboxVMMSpacer { width: 12px; height: 1px; margin: 0; padding: 0; }
 #vboxVirtualMediaManager table.vboxVMMList { font-size: 0.9em; }
 #vboxVirtualMediaManager tr { vertical-align: middle; }
-#vboxVirtualMediaManager table td input.vboxVMMMediaExpand { background-position:left center;height:16px;width:10px;margin:0px 2px 0px 0px;padding: 0px; border: 0px; }
+#vboxVirtualMediaManager table td input.vboxVMMMediaExpand { background-position:left center;height:16px;width:10px;margin: 0; 2px 0px 0px;padding: 0; border: 0; }
 #vboxVirtualMediaManager .vboxListTable td,
 	#vboxVirtualMediaManager .vboxListTable th { white-space: nowrap; padding: 2px; }
 #vboxVirtualMediaManager table.vboxVMMList tr > th, #vboxVirtualMediaManager table.vboxVMMList tr > td { padding-left: 12px; }
@@ -376,10 +376,10 @@ div.vboxVMMDialog div.ui-dialog-buttonpane {
 	#vboxVirtualMediaManager table.vboxVMMList span { vertical-align: middle; height: 16px; background-position: 0px 0px; }
 #vboxVirtualMediaManager table.vboxVMMList span { display: inline-block; } 
 #vboxVirtualMediaManager div.vboxVMMMediumInfo { font-size: 0.9em; }
-#vboxVirtualMediaManager .vboxVMMMediumInfo input { padding: 0px; margin: 0px; background: transparent; color: #000000; }
-#vboxVirtualMediaManager .vboxVMMMediumInfo table { padding: 0px; border: 1px solid #000; border-spacing:0px; margin-top: 12px; width: 100%; background: #fafafa; }
+#vboxVirtualMediaManager .vboxVMMMediumInfo input { padding: 0; margin: 0; background: transparent; color: #000000; }
+#vboxVirtualMediaManager .vboxVMMMediumInfo table { padding: 0; border: 1px solid #000; border-spacing: 0;; margin-top: 12px; width: 100%; background: #fafafa; }
 #vboxVirtualMediaManager .vboxVMMMediumInfo th { padding:2px; padding-left: 18px; text-align: right; width: auto; white-space: nowrap; }
-#vboxVirtualMediaManager .vboxVMMMediumInfo td { padding:0px; padding-left: 10px; text-align: left; width: 100%; }
+#vboxVirtualMediaManager .vboxVMMMediumInfo td { padding: 0;; padding-left: 10px; text-align: left; width: 100%; }
 #vboxVirtualMediaManager .vboxVMMSortImgFaded img {
 	opacity: .30;
 	filter:alpha(opacity=30);
@@ -387,7 +387,7 @@ div.vboxVMMDialog div.ui-dialog-buttonpane {
 }
 
 /* Wizards */
-table.vboxWizard { margin: 0px; padding: 4px; border-spacing: 0px; }
+table.vboxWizard { margin: 0; padding: 4px; border-spacing: 0; }
 div.vboxWizard table.vboxWizard tr { vertical-align: top; }
 div.vboxWizard td.vboxWizardContent { padding: 0px 8px 0px 8px; }
 div.vboxWizard td.vboxWizardContent div.vboxOptions {
@@ -397,7 +397,7 @@ div.vboxWizard td.vboxWizardContent div.vboxOptions {
 	background: url(../images/30white.png) repeat;
 	padding: 4px;
 }
-div.vboxWizard { border: 0px; padding: 0px; margin: 0px; }
+div.vboxWizard { border: 0; padding: 0; margin: 0; }
 div.vboxWizard h3 { margin: 2px 0px 18px 0px; font-size: 16px; }
 div.vboxWizard table.vboxOptions th { text-align: right; }
 div.vboxWizard table.vboxOptions { margin-top: 4px; }
@@ -508,13 +508,13 @@ ul.vboxMenuBar li {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=1 ); /* IE6-9 */
 }
 
-#vboxPane div.vboxMenuBar, div.vboxDialogContent div.vboxMenuBar { border-bottom: 1px solid #aaa; padding-top: 2px; padding-bottom: 2px; margin-top: 0px; height: 100%; }
+#vboxPane div.vboxMenuBar, div.vboxDialogContent div.vboxMenuBar { border-bottom: 1px solid #aaa; padding-top: 2px; padding-bottom: 2px; margin-top: 0; height: 100%; }
 #vboxPane div.vboxMenuBar span, div.vboxDialogContent div.vboxMenuBar span {
 	padding: 1px 8px 1px 4px; border: 1px solid transparent; cursor: default;
 	-moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/;
 }
 #vboxPane div.vboxMenuBar span.vboxBordered, div.vboxDialogContent div.vboxMenuBar span.vboxBordered { border: 1px solid #aaa; }
-#vboxPane ul.vboxMenuBar, div.vboxDialogContent ul.vboxMenuBar { background: #e9e9e9; border: 2px solid #aaa; margin: 0px; padding: 0px; }
+#vboxPane ul.vboxMenuBar, div.vboxDialogContent ul.vboxMenuBar { background: #e9e9e9; border: 2px solid #aaa; margin: 0; padding: 0; }
 #vboxPane ul.vboxMenuBar a,div.vboxDialogContent ul.vboxMenuBar a { padding: 2px 18px 2px 28px; }
 
 /* Tree Views */
@@ -573,10 +573,10 @@ ul.vboxMenuBar li {
 /* Virtual Machine List and Top Toolbar*/
 /* So that resizing is consistent */
 #vboxChooserPane { background: #fff; padding-top: 2px; }
-#vboxChooserPane * { margin: 0px; padding: 0px;}
+#vboxChooserPane * { margin: 0; padding: 0;}
 #vboxChooserPane span.vboxServerLink { text-decoration: underline; cursor: pointer; }
 #vboxChooserPane > div { width: 300px; } /* Initial Width */
-#vboxChooserPane .vboxChooserDropTarget { height: 4px !important; padding: 0px; margin: 0px; background: transparent; }
+#vboxChooserPane .vboxChooserDropTarget { height: 4px !important; padding: 0; margin: 0; background: transparent; }
 #vboxChooserPane div.vboxChooserGroupHeader div.vboxChooserDropTarget {
 	position: relative; left: -4px;
 }
@@ -608,16 +608,16 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 	/* SVG as background image (IE9/Chrome/Safari/Opera) */ 
 	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc3MTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGMEZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNDRkRGRkYiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3MTkpIiAvPgo8L3N2Zz4=);	
 }
-#vboxChooserDiv { margin: 0px; margin-right: 2px; padding: 0px; border:0px; background: #fff; }
+#vboxChooserDiv { margin: 0; margin-right: 2px; padding: 0; border: 0;; background: #fff; }
 #vboxChooserDiv table.vboxChooserVM td,
-#vboxChooserDiv table.vboxChooserVM span { white-space: nowrap; border: 0px; text-align: left;}
+#vboxChooserDiv table.vboxChooserVM span { white-space: nowrap; border: 0; text-align: left;}
 #vboxChooserDiv table.vboxChooserVM span.vboxVMName { font-weight: bold; }
 #vboxChooserDiv table.vboxChooserVM span.vboxVMState { font-size: 0.9em; margin-left: 2px; }
 #vboxChooserDiv table.vboxChooserVM td.vboxVMSessionOpen { font-style: italic; }
 #vboxChooserDiv table.vboxChooserVM td.vboxVMTitle { width: 100%; }
 #vboxChooserPane img.vboxHostIcon { border: 1px solid #999; }
-#vboxChooserPane img.vboxVMIcon { height: 32px; width: 32px; margin: 0px 4px 0px 4px; padding: 0px; }
-#vboxChooserPane div.vboxChooserMini img.vboxVMIcon { height: 16px; width: 16px; margin: 0px 2px 0px 2px; padding: 0px; }
+#vboxChooserPane img.vboxVMIcon { height: 32px; width: 32px; margin: 0px 4px 0px 4px; padding: 0; }
+#vboxChooserPane div.vboxChooserMini img.vboxVMIcon { height: 16px; width: 16px; margin: 0px 2px 0px 2px; padding: 0; }
 #vboxChooserPane div.vboxChooserGroup {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -630,8 +630,8 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 	background: #fff;
 }
 #vboxChooserPane div.vboxChooserGroupRoot {
-	border: 0px;
-	margin: 0px;
+	border: 0;
+	margin: 0;
 }
 
 #vboxChooserPane div.vboxChooserGroupHeader {
@@ -647,7 +647,7 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 	background-image: url(../images/header_grad.png);
 	background-color: #cccccc;
 	padding: 0px 0px 8px 8px;
-	margin: 0px;
+	margin: 0;
 	height: 16px;
 	overflow: hidden;
 }
@@ -672,9 +672,9 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 	overflow: hidden;
 	text-overflow:ellipsis;
 	display: inline-block;
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 
@@ -745,7 +745,7 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 #vboxChooserPane div.vboxChooserGroupVMs { padding: 2px 2px 0px 2px; }
 #vboxChooserPane div.vboxChooserGroup span.vboxChooserGroupName { font-weight: bold; display: inline-block; }
 #vboxChooserPane div.vboxChooserGroup span.vboxChooserGroupInfo { float: right; display: none; position: relative; top: -1px; }
-#vboxChooserPane div.vboxChooserGroup span.vboxChooserGroupCounts > span { margin: 0px; padding: 0px; margin-left:2px; margin-right:2px; display:inline-block; width:16px; height:16px;}
+#vboxChooserPane div.vboxChooserGroup span.vboxChooserGroupCounts > span { margin: 0; padding: 0; margin-left:2px; margin-right:2px; display:inline-block; width:16px; height:16px;}
 #vboxChooserPane div.vboxChooserGroup div.vboxHover span.vboxChooserGroupInfo { display: inline; }
 #vboxChooserPane div.vboxChooserGroupHeader div.vboxChooserDropTargetBottom { display: none; }
 
@@ -766,9 +766,9 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 
 /* Hide / show only 1 group */
 #vboxChooserPane div.vboxChooserGroupHide {
-	border: 0px;
-	margin: 0px;
-	padding: 0px;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 #vboxChooserPane div.vboxChooserGroupRootLevel {}
@@ -795,13 +795,13 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 { display: none; }
 
 #vboxChooserPane div.vboxChooserGroupHideShowContainer > div.vboxChooserGroup {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #vboxChooserPane div.vboxChooserGroupShowOnly {
 	margin: 2px;
 	display: block;
-	border: 0px;
+	border: 0;
 }
 
 #vboxChooserPane div.vboxChooserGroupShowOnly > div.vboxChooserGroupHeader {
@@ -829,10 +829,10 @@ div.vboxChooserGroup > div.vboxChooserDropTargetBottom {
 	position: relative;
 	top: -1px;
 	display: inline-block;
-	margin: 0px;
+	margin: 0;
 	margin-left: 2px;
 	margin-right: 2px;
-	padding: 0px;
+	padding: 0;
 	cursor: pointer;
 	width: 18px;
 	height: 18px;
@@ -866,10 +866,10 @@ table.vboxDetailsTableBox tr.vboxDetailsHead th { white-space: nowrap; }
 /* Details table boxes */
 table.vboxDetailsTableBox {
 	background: #fff;
-	margin: 0px;
+	margin: 0;
 	width: 100%;
 	border: 0px solid transparent;
-	border-spacing: 0px;
+	border-spacing: 0;
 	border-radius: 6px;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -878,8 +878,8 @@ table.vboxDetailsTableBox {
 table.vboxDetailsTableBox img::selection { color: transparent; }
 
 table.vboxDetailsTableBox tr.vboxDetailsHead th.vboxDetailsSection {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	background-color: #cccccc;
 }
 table.vboxDetailsTableBox tr.vboxDetailsHead th.vboxDetailsSection div {
@@ -887,7 +887,7 @@ table.vboxDetailsTableBox tr.vboxDetailsHead th.vboxDetailsSection div {
 	background-image: url(../images/header_grad.png);
 	background-color: #cccccc;
 	padding: 4px 4px 4px 8px;
-	margin: 0px;
+	margin: 0;
 	height: 16px;
 }
 #vboxTabVMDetails div.vboxDetailsBorder {
@@ -904,9 +904,9 @@ table.vboxDetailsTableBox tr.vboxDetailsHead th.vboxDetailsSection div {
 	-moz-border-radius-bottomright: 8px/*{cornerRadius}*/;
 	-webkit-border-bottom-right-radius: 8px/*{cornerRadius}*/;
 	border-bottom-right-radius: 8px/*{cornerRadius}*/;
-	border: 0px;
+	border: 0;
 	border-collapse: collapse;
-	border-spacing: 0px;
+	border-spacing: 0;
 	
 }
 
@@ -973,17 +973,17 @@ table.vboxDetailsTable td.vboxDetailDescriptionCell { padding-left: 20px; white-
 
 /* menus */
 #vboxDetailsShowMenu li, #vboxDetailsShowMenu li span { cursor: default; }
-#vboxDetailsShowMenu li input, #vboxDetailsPreviewMenu li input { display: inline; padding: 0px; margin: 0px; margin-right: 4px; margin-left: 4px;}
+#vboxDetailsShowMenu li input, #vboxDetailsPreviewMenu li input { display: inline; padding: 0; margin: 0; margin-right: 4px; margin-left: 4px;}
 
 /**
  * Details preview box
  */
 #vboxVMDetails table div.vboxVMDetailsBoxpreview { margin-left: 2px; }
-#vboxTabVMDetails table.vboxPreviewTable td { padding: 0px; margin: 0px; border: 0px; }
+#vboxTabVMDetails table.vboxPreviewTable td { padding: 0; margin: 0; border: 0; }
 #vboxTabVMDetails .vboxDetailsTableBoxPreview { text-align: center; }
 #vboxTabVMDetails .vboxDetailsTableBoxPreview div,
-#vboxTabVMDetails .vboxDetailsTableBoxPreview span { padding: 0px; margin: 0px; border: 0px; }
-#vboxTabVMDetails .vboxDetailsTableBoxPreview table, #vboxTabVMDetails .vboxDetailsTableBoxPreview td, #vboxTabVMDetails .vboxDetailsTableBoxPreview img { padding: 0px; margin: 0px; border: 0px; }
+#vboxTabVMDetails .vboxDetailsTableBoxPreview span { padding: 0; margin: 0; border: 0; }
+#vboxTabVMDetails .vboxDetailsTableBoxPreview table, #vboxTabVMDetails .vboxDetailsTableBoxPreview td, #vboxTabVMDetails .vboxDetailsTableBoxPreview img { padding: 0; margin: 0; border: 0; }
 div.vboxPreviewSaved {
 	background-color:#000;
 }
@@ -1007,13 +1007,13 @@ div.vboxPreviewSaved img {
 	width:200px;
 	height:14px;
 	overflow:hidden;
-	margin:0px;
-	padding:0px;
+	margin: 0;;
+	padding: 0;;
 	display:inline-block;
 	height:14px;
 }
-#vboxHostMemUsed span { background-color:transparent; padding-left: 2px; padding-right: 2px; padding-top: 0px; padding-bottom: 0px; margin: 0px; color: #ffffff; white-space: nowrap;}
-#vboxHostMemUsed div { padding:0px; margin: 0px; height: 14px; width: 1px; }
+#vboxHostMemUsed span { background-color:transparent; padding-left: 2px; padding-right: 2px; padding-top: 0; padding-bottom: 0; margin: 0; color: #ffffff; white-space: nowrap;}
+#vboxHostMemUsed div { padding: 0;; margin: 0; height: 14px; width: 1px; }
 
 
 /**
@@ -1032,19 +1032,19 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 
 /* Settings menu list (left hand list of sections) */
 #vboxSettingsMenu { text-align: left; background: #fff; width: auto; white-space: nowrap; border: 1px solid #000; }
-#vboxSettingsMenu img { margin: 0px; padding: 0px; }
-#vboxSettingsMenu ul { list-style: none; padding: 0px; margin: 0px; white-space: nowrap;}
-#vboxSettingsMenu li { white-space: nowrap; padding: 4px 10px 4px 2px; margin: 0px; cursor: pointer;}
-#vboxSettingsMenu div { white-space: nowrap; display: inline; padding: 0px; margin: 0px; }
+#vboxSettingsMenu img { margin: 0; padding: 0; }
+#vboxSettingsMenu ul { list-style: none; padding: 0; margin: 0; white-space: nowrap;}
+#vboxSettingsMenu li { white-space: nowrap; padding: 4px 10px 4px 2px; margin: 0; cursor: pointer;}
+#vboxSettingsMenu div { white-space: nowrap; display: inline; padding: 0; margin: 0; }
 
 /* Settings section title */
-#vboxSettingsTitle { margin-top: 0px; border: 1px solid #000; background: #fff; display: block; text-align: left; padding: 6px; font-weight: bold; }
+#vboxSettingsTitle { margin-top: 0; border: 1px solid #000; background: #fff; display: block; text-align: left; padding: 6px; font-weight: bold; }
 
 /* Settings main section surrounding div */
 /*#vboxSettingsList { padding: 2px; margin-top: 8px; }*/
 
 /* Global Network Settings */
-#vboxSettingsGlobalNetList { background: #fff; height: 280px; padding: 0px; overflow: auto; }
+#vboxSettingsGlobalNetList { background: #fff; height: 280px; padding: 0; overflow: auto; }
 #vboxSettingsGlobalNetList li { padding-left: 4px; list-style: none; }
 #vboxSettingsGlobalNetEditAdapter th { text-align: right; width: auto; white-space: nowrap;}
 #vboxSettingsGlobalNetEditAdapter td, #vboxSettingsGlobalNetEditAdapter td input { text-align: left; width: 100%; white-space: nowrap;}
@@ -1053,7 +1053,7 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 #vboxSettingsGlobalNetEditDialog .ui-tabs-panel { background: #fff; }
 
 /* User Settings */
-#vboxSettingsUserList { background: #fff; height: 310px; padding: 0px; overflow: auto;}
+#vboxSettingsUserList { background: #fff; height: 310px; padding: 0; overflow: auto;}
 #vboxSettingsUserList li { padding-left: 4px; }
 
 /* Language Settings */
@@ -1067,7 +1067,7 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 	#vboxSettingsPane .vboxSettingsPaneSection .ui-tabs-panel { background: #eee; }
 #vboxSettingsPane .vboxSettingsPaneSection .vboxNonTabbed .vboxNonTabbed { background: #aaa; }
 #vboxSettingsPane div.slider .ui-state-default { background: #ff8; border: 1px solid #000; }
-#vboxSettingsPane .vboxTabbed { border: 0px solid #999; padding: 2px; margin: 0px; }
+#vboxSettingsPane .vboxTabbed { border: 0px solid #999; padding: 2px; margin: 0; }
 #vboxSettingsPane .vboxNonTabbed { border: 2px solid #999; padding: 6px; }
 
 /* Storage Settings */
@@ -1075,9 +1075,9 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 #vboxSettingsControllersButtons { text-align: right; }
 #vboxSettingsControllersButtons { width: 100%; text-align: right; }
 
-#vboxSettingsStorageTree table { width: 100%; margin: 0px; padding: 0px; }
-#vboxSettingsStorageTree table td { height: 20px; white-space: nowrap; border: 0px; padding: 0px; margin: 0px; width: auto; }
-#vboxSettingsStorageTree table td.vboxSettingsStorageTypeIcon img { width: 20px; height: 20px; padding: 0px; margin:0px; vspace: 0px; hspace: 0px; }
+#vboxSettingsStorageTree table { width: 100%; margin: 0; padding: 0; }
+#vboxSettingsStorageTree table td { height: 20px; white-space: nowrap; border: 0; padding: 0; margin: 0; width: auto; }
+#vboxSettingsStorageTree table td.vboxSettingsStorageTypeIcon img { width: 20px; height: 20px; padding: 0; margin: 0;; vspace: 0; hspace: 0; }
 #vboxSettingsStorageTree table td.vboxSettingsStorageTypeIcon {
 	width: 22px;
 	background-position: 0px 1px;
@@ -1086,12 +1086,12 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 #vboxSettingsStorageTree table tr { vertical-align: middle; }
 	
 #vboxSettingsStorageTree input { display: inline; }
-#vboxSettingsStorageTree ul, #vboxSettingsStorageTree ul li { margin: 0px; padding: 0px; list-style: none; }
-#vboxSettingsStorageTree ul ul li { margin: 0px; padding: 0px 0px 0px 20px; background: url(../images/treeview-default-line.gif) 2px 0px no-repeat; }
+#vboxSettingsStorageTree ul, #vboxSettingsStorageTree ul li { margin: 0; padding: 0; list-style: none; }
+#vboxSettingsStorageTree ul ul li { margin: 0; padding: 0px 0px 0px 20px; background: url(../images/treeview-default-line.gif) 2px 0px no-repeat; }
 #vboxSettingsStorageTree ul ul li.last { background-position: 2px -1762px }
 #vboxSettingsStorageTree li .vboxListItem .vboxToolbarSmall { display: none; }
 #vboxSettingsStorageTree li input.vboxToolbarSmallButton,
-	#vboxSettingsStorageTree li input.vboxImgButton { border: 0px; padding: 0px; margin: 0px; height: 20px; }
+	#vboxSettingsStorageTree li input.vboxImgButton { border: 0; padding: 0; margin: 0; height: 20px; }
 
 
 /* Storage Disks */
@@ -1119,8 +1119,8 @@ div.vboxSettingsDialog div.ui-dialog-buttonpane {
 
 /* USB Settings */
 #vboxSettingsUSBFilters { background: #fff; }
-#vboxSettingsUSBFilters ul li { margin: 0px; padding: 2px 0px 2px 0px; }
-#vboxSettingsUSBFilters ul { list-style: none; padding: 0px;}
+#vboxSettingsUSBFilters ul li { margin: 0; padding: 2px 0px 2px 0px; }
+#vboxSettingsUSBFilters ul { list-style: none; padding: 0;}
 #vboxSettingsUSBFilters ul input { vertical-align: bottom; }
 
 /* USB Devices */
