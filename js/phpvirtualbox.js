@@ -2070,7 +2070,7 @@ var vboxVMActions = {
 					var q = trans('<p>Could not find the VirtualBox Guest Additions CD image file <nobr><b>%1</b></nobr> or <nobr><b>%2</b>.</nobr></p><p>Do you wish to download this CD image from the Internet?</p>','UIMessageCenter').replace('%1',s1).replace('%2',s2);
 					var b = {};
 					b[trans('Yes','QIMessageBox')] = function() {
-						var url = 'http://download.virtualbox.org/virtualbox/%1/VBoxGuestAdditions_%2.iso';
+						var url = 'https://download.virtualbox.org/virtualbox/%1/VBoxGuestAdditions_%2.iso';
 						url = url.replace('%1',$('#vboxPane').data('vboxConfig').version.string.replace('_OSE',''));
 						url = url.replace('%2',$('#vboxPane').data('vboxConfig').version.string.replace('_OSE',''));
 						$(this).remove();

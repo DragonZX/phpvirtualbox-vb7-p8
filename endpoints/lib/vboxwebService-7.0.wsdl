@@ -4,11 +4,11 @@
   Generated from: src/VBox/Main/idl/VirtualBox.xidl (VirtualBox's generic pseudo-IDL file)
   Generator: src/VBox/Main/webservice/websrv-wsdl-service.xsl
 -->
-<definitions xmlns:interface="urn:vbox" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:vbox="http://www.virtualbox.org/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="VirtualBox" targetNamespace="http://www.virtualbox.org/Service">
-  <import location="vboxweb-7.0.wsdl" namespace="http://www.virtualbox.org/"/>
+<definitions xmlns:interface="urn:vbox" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:vbox="https://www.virtualbox.org/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="VirtualBox" targetNamespace="https://www.virtualbox.org/Service">
+  <import location="vboxweb-7.0.wsdl" namespace="https://www.virtualbox.org/"/>
   <service name="vboxService">
     <port binding="vbox:vboxBinding" name="vboxServicePort">
-      <soap:address location="http://localhost:18083/"/>
+      <soap:address location="https://localhost:18083/"/>
     </port>
   </service>
 </definitions>
