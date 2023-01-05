@@ -1,7 +1,8 @@
 /.settings/
 /.buildpath
 /.project
-/config.php
+config.php
 /phpinfo.php
 /.vscode
 /.idea
+recovery.php
